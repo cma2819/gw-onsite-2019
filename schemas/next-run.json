@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+        "idx": {
+            "type": "number",
+            "default": -1
+        },
+		"game": {
+            "type": "string",
+            "default": ""
+		},
+		"category": {
+            "type": "string",
+            "defult": ""
+        },
+        "estimate": {
+            "type": "string",
+            "default": ""
+        },
+        "console": {
+            "type": "string",
+            "default": ""
+        },
+        "notes": {
+            "type": "string",
+            "default": ""
+        },
+        "players": {
+            "$ref": "types/players.json"
+        }
+	}
+}

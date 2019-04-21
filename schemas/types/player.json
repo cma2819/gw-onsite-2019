@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"enable": {
+			"type": "boolean",
+			"default": false
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"role": {
+			"type":"string",
+			"enum": ["runner", "commentator"],
+			"default": "runner"
+		},
+		"twitter": {
+			"type": "string",
+			"default": ""
+		},
+		"twitch": {
+			"type": "string",
+			"default": ""
+		},
+		"nico": {
+			"type": "string",
+			"default": ""
+		},
+		"time": {
+			"type": "string",
+			"default": ""
+		},
+		"state": {
+			"type": "string",
+			"enum": ["running", "finished", "forfeit"],
+			"default": "running"
+		}
+	}
+}

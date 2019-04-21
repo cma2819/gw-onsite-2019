@@ -1,0 +1,34 @@
+<custom-style>
+    <style include="iron-flex iron-flex-alignment">
+        countdown #timeInput {
+            font-size: 32px !important;
+        }
+
+        countdown #start,
+        countdown #stop {
+            width: 90px;
+            height: 45px;
+            @apply --layout-flex-none;
+        }
+
+        countdown #start {
+            margin-left: auto;
+
+            --paper-button: {
+                background-color: #5BA664;
+                background: #5BA664;
+                color: white;
+            }
+        }
+
+        countdown #stop {
+            margin-right: 24px;
+
+            --paper-button: {
+                background-color: #C9513E;
+                background: #C9513E;
+                color: white;
+            }
+        }
+    </style>
+</custom-style>

@@ -1,0 +1,71 @@
+{
+  "name": "gw-onsite-2019",
+  "version": "0.0.0",
+  "description": "Stream overlay layout for On site event on GW 2019",
+  "homepage": "",
+  "author": {
+    "name": "cma",
+    "email": "yamanaka-team@hotmail.co.jp",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "stream",
+        "title": "Stream",
+        "file": "stream.html",
+        "fullbleed": true,
+        "headerColor": "#bdbdff"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "3DS.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "GBC.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "HD.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "SD.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "Free.html",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "livesplit-core": "^0.10.2",
+    "milliseconds": "^1.0.3",
+    "parse-ms": "^2.0.0",
+    "puppeteer": "^1.12.2",
+    "request": "^2.88.0",
+    "riot": "^3.13.2"
+  }
+}

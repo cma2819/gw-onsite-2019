@@ -1,0 +1,55 @@
+<custom-style>
+    <style>
+        run-editor #runners > :nth-child(1) paper-input {
+            --paper-input-container-focus-color: #32a7d3;
+            --paper-input-container-label: {
+                color: #32a7d3;
+            };
+        }
+
+        run-editor #runners > :nth-child(2) paper-input {
+            --paper-input-container-focus-color: #fa5959;
+            --paper-input-container-label: {
+                color: #fa5959;
+            };
+        }
+
+        run-editor #runners > :nth-child(3) paper-input {
+            --paper-input-container-focus-color: #24c55d;
+            --paper-input-container-label: {
+                color: #24c55d;
+            };
+        }
+
+        run-editor #runners > :nth-child(4) paper-input {
+            --paper-input-container-focus-color: #dd4dee;
+            --paper-input-container-label: {
+                color: #dd4dee;
+            };
+        }
+        
+        run-editor #resetRun {
+            --paper-button: {
+                background-color: #C9513E;
+                background: #C9513E;
+                color: white;
+            }
+        }
+
+        run-editor #applyChanges {
+            --paper-button: {
+                background-color: #5BA664;
+                background: #5BA664;
+                color: white;
+            }
+        }
+
+        run-editor paper-input {
+            @apply --layout-flex;
+            --paper-input-container-disabled: {
+                opacity: 1;
+                background-color: #ffb0b3;
+            }
+        }
+    </style>
+</custom-style>

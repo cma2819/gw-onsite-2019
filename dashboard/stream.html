@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>配信管理ダッシュボード</title>
+	<meta charset="UTF-8">
+	<script src="../bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+	<script src="../node_modules/riot/riot+compiler.min.js"></script>
+	<!-- Components import-->
+	<link rel="import" href="./components/import.html">
+	<!-- Styles import -->
+	<link rel="stylesheet" href="./components/styles/common.css">
+	<link rel="import" href="./components/styles/common-ui-theme.html">
+	<link rel="import" href="./components/styles/countdown-style.html">
+	<link rel="import" href="./components/styles/run-editor-style.html">
+	<link rel="import" href="./components/styles/schedule-style.html">
+	<link rel="import" href="./components/styles/timekeeper-style.html">
+	<link rel="stylesheet" href="./components/styles/check-box.css">
+	<!-- Riot components -->
+	<script src="./components/tags/checklist.tag" type="riot/tag"></script>
+	<script src="./components/tags/countdown.tag" type="riot/tag"></script>
+	<script src="./components/tags/run-editor.tag" type="riot/tag"></script>
+	<script src="./components/tags/rundown.tag" type="riot/tag"></script>
+	<script src="./components/tags/schedule.tag" type="riot/tag"></script>
+	<script src="./components/tags/timekeeper.tag" type="riot/tag"></script>
+	<!-- Riot Tags -->
+	<script src="./tags/gw-timekeeper.tag" type="riot/tag"></script>
+	<script src="./tags/gw-countdown.tag" type="riot/tag"></script>
+	<script src="./tags/gw-rundown.tag" type="riot/tag"></script>
+	<script src="./tags/gw-schedule.tag" type="riot/tag"></script>
+
+	<!-- Scripts -->
+	<script src="./components/util.js"></script>
+	<script src="stream.js"></script>
+	<script src="timekeeper.js"></script>
+	<custom-style>
+		<style include="iron-flex iron-flex-alignment">
+			body {
+				background-color: #f5f5f5;
+				margin: 0;
+				padding: 0;
+				@apply --layout-horizontal;
+				@apply --layout-center-justified;
+			}
+			
+			#wrapper {
+				width: 100vw;
+				@apply --layout-horizontal;
+				@apply --layout-flex-none;
+			}
+
+			#stream-container {
+				box-sizing: border-box;
+				column-gap: 10px;
+				display: grid;
+				flex-grow: 1;
+				flex-shrink: 0;
+				grid-row-gap: 10px;
+				grid-template-columns: 514px 600px 650px;
+				grid-template-rows: 82px 600px;
+				padding: 15px 20px;
+			}
+
+			.bordered {
+				border: 1px solid black;
+				background-color: white;
+			}
+
+			gw-countdown {
+				grid-column: 1;
+				grid-row: 1;
+			}
+			gw-rundown {
+				grid-column: 1;
+				grid-row: 2;
+			}
+			gw-timekeeper {
+				grid-column: 2;
+				grid-row: 1 / 3;
+			}
+			gw-schedule {
+				grid-column: 3;
+				grid-row: 1 / 3;
+			}
+		</style>
+	</custom-style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="stream-container">
+			<gw-rundown class="bordered"></gw-rundown>
+			<gw-countdown class="bordered"></gw-countdown>
+			<gw-timekeeper class="bordered"></gw-timekeeper>
+			<gw-schedule class="bordered"></gw-schedule>
+		</div>
+	</div>
+	<script>
+		riot.mount('gw-countdown');
+	</script>
+</body>
+
+</html>

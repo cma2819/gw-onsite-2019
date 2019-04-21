@@ -1,0 +1,90 @@
+<custom-style>
+    <style include="iron-flex iron-flex-alignment">
+
+        schedule #typeahead-container {
+            @apply --layout-vertical;
+            @apply --layout-end;
+        }
+
+        schedule #take {
+            font-size: 14px;
+            height: 24px;
+            padding-right: 0;
+            --paper-button: {
+                background-color: #5BA664;
+                background: #5BA664;
+                color: white;
+            };
+        }
+
+        schedule #runs {
+            @apply --layout-horizontal;
+        }
+
+        schedule #edit-ctrls {
+            @apply --layout-horizontal;
+            margin-top: 32px;
+        }
+
+        schedule #edit-ctrls > paper-button {
+            @apply --layout-flex;
+        }
+
+        schedule #previous,
+        schedule #next {
+            --paper-button: {
+                background-color: #645BA6;
+                background: #645BA6;
+                color: white;
+            };
+            height: 64px;
+        }
+
+        schedule #editCurrent,
+        schedule #editNext {
+            --paper-button: {
+                background-color: #A50074;
+                background: #A50074;
+                color: white;
+            };
+            @apply --layout-flex-3;
+        }
+
+        schedule #fetchLatestSchedule {
+            @apply --layout-flex-6;
+        }
+
+        schedule paper-button {
+            white-space: nowrap;
+            @apply --layout-horizontal;
+            @apply --layout-center-center;
+        }
+    </style>
+    <style include="iron-flex iron-flex-alignment">
+
+        schedule-runinfo .runner {
+            width: calc(50% - 4px);
+            padding-right: 8px;
+            box-sizing: border-box;
+        }
+
+        schedule-runinfo .runner:nth-child(odd) {
+            margin-right: 4px;
+        }
+
+        schedule-runinfo .runner:nth-child(even) {
+            margin-left: 4px;
+        }
+
+        schedule-runinfo #misc {
+            flex-wrap: wrap;
+        }
+
+        schedule-runinfo #misc > div {
+            @apply --layout-vertical;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+    </style>
+</custom-style>

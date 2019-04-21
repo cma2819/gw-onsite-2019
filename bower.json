@@ -1,0 +1,40 @@
+{
+  "name": "gw-onsite-2019",
+  "description": "Stream overlay layout for On site event on GW 2019",
+  "main": "",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-flex-layout": "2.0.3",
+    "iron-icons": "PolymerElements/iron-icons#^2.0.0",
+    "paper-button": "PolymerElements/paper-button#^2.0.0",
+    "paper-checkbox": "PolymerElements/paper-checkbox#^2.0.0",
+    "paper-dialog": "PolymerElements/paper-dialog#^2.0.0",
+    "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^2.0.0",
+    "paper-icon-button": "PolymerElements/paper-icon-button#^2.0.0",
+    "paper-input": "PolymerElements/paper-input#^2.0.0",
+    "paper-item": "PolymerElements/paper-item#^2.0.0",
+    "paper-listbox": "PolymerElements/paper-listbox#^2.0.0",
+    "paper-progress": "PolymerElements/paper-progress#^2.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^2.0.0",
+    "paper-toast": "PolymerElements/paper-toast#^2.0.0",
+    "paper-toggle-button": "PolymerElements/paper-toggle-button#^2.0.0",
+    "paper-tooltip": "PolymerElements/paper-tooltip#^2.0.0",
+    "sc-fitted-text": "SupportClass/sc-fitted-text#^1.1.1",
+    "vaadin-combo-box": "vaadin/vaadin-combo-box#v2.0.0",
+    "webcomponentsjs": "^2.2.8"
+  }
+}

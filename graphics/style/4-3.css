@@ -1,0 +1,62 @@
+body {
+    width: 1280px;
+    height: 720px;
+}
+
+img#logo {
+    width: 192px;
+    height: 108px;
+    padding: 10px;
+}
+
+video-view {
+    position: absolute;
+    width: 768px;
+    height: 576px;
+    border: 2px solid var(--theme-color);
+    background-color: black;
+    margin: 10px 10px 0px 0px;
+    top: 0px;
+    right: 0px;
+}
+
+run-info {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 452px;
+    margin: 0 10px;
+    padding: 10px;
+    background: linear-gradient(90deg, transparent, var(--background-white) 20%, var(--background-white) 80%, transparent);
+}
+
+player-info {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 728px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    background: linear-gradient(90deg, transparent, var(--background-white) 20%, var(--background-white));
+}
+
+timekeeper {
+    position: absolute;
+    width: 472px;
+    bottom: 295px;
+    left: 0px;
+    padding: 10px;
+    padding-left: 0px;
+    background: linear-gradient(270deg, transparent, var(--background-white) 20%, var(--background-white));
+}
+
+#camera {
+    position: absolute;
+    width: 472px;
+    height: 265px;
+    border: 2px solid var(--theme-color);
+    background-color: black;
+    margin: 10px;
+    bottom: 0px;
+    left: 0px;
+}

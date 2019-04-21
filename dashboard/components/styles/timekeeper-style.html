@@ -1,0 +1,94 @@
+<custom-style>
+        <style include="iron-flex iron-flex-alignment">
+            #timer {
+                @apply --layout-horizontal;
+                @apply --layout-center;
+                @apply --layout-around-justified;
+                @apply --layout-flex-none;
+                font-weight: 700;
+                height: 105px;
+            }
+    
+            #timer-time {
+                font-size: 42px;
+            }
+    
+            #timer paper-button {
+                width: 128px;
+                height: 30px;
+                margin: 4px 3px;
+            }
+    
+            #timer paper-button {
+                @apply --layout-center-center;
+                @apply --layout-horizontal;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 0;
+            }
+    
+            paper-dialog {
+                font-size: larger;
+            }
+    
+            paper-dialog paper-input {
+                --paper-input-container-input: {
+                    font-size: larger;
+                };
+    
+                --paper-input-container-label: {
+                    font-size: larger;
+                };
+            }
+        </style>
+        <style>
+            timekeeper-runner #info {
+                line-height: 1;
+                min-width: 1px;
+                @apply --layout-vertical;
+                @apply --layout-flex;
+            }
+    
+            timekeeper-runner #info-name {
+                font-size: 24px;
+                font-weight: 500;
+                min-width: 1px;
+                color: black;
+            }
+    
+            timekeeper-runner #info-status {
+                font-size: 24px;
+                color: #adadad;
+                font-weight: 700;
+            }
+    
+            timekeeper-runner #info-status.finished {
+                color: #43ac6a;
+            }
+    
+            timekeeper-runner #buttons {
+                margin-left: auto;
+                @apply --layout-horizontal;
+            }
+    
+            timekeeper-runner #buttons paper-button {
+                width: 90px;
+                height: 52px;
+            }
+    
+            timekeeper-runner #empty {
+                font-size: 24px;
+                color: #adadad;
+                width: 100%;
+                text-align: center;
+            }
+    
+            timekeeper-runner paper-button {
+                @apply --layout-center-center;
+                @apply --layout-horizontal;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 0;
+            }
+        </style>
+    </custom-style>
