@@ -1,14 +1,7 @@
-body {
-    width: 1280px;
-    height: 720px;
-}
 
-time-text {
-    width: 352px;
-    height: 40px;
-    padding: 10px;
-    margin-top: -15px;
-    font-size: 3vw;
+title-text {
+    height: 3em;
+    width: 312px;
 }
 
 video-view {
@@ -24,11 +17,10 @@ video-view {
 
 run-info {
     position: absolute;
-    top: 552px;
+    top: 516px;
     right: 0px;
-    width: 728px;
-    margin: 0 10px;
-    padding: 10px;
+    width: 896px;
+    margin: 10px 10px;
     background: linear-gradient(90deg, transparent, var(--background-white) 20%, var(--background-white) 80%, transparent);
 }
 
@@ -36,15 +28,15 @@ player-info {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    width: 728px;
-    margin-bottom: 10px;
+    width: 896px;
+    padding-bottom: 10px;
     padding-left: 40px;
     background: linear-gradient(90deg, transparent, var(--background-white) 20%, var(--background-white));
 }
 
 timekeeper {
     position: absolute;
-    width: 472px;
+    width: 352px;
     bottom: 0px;
     left: 0px;
     padding: 10px;
@@ -55,10 +47,10 @@ timekeeper {
 #camera {
     position: absolute;
     width: 352px;
-    height: 264px;
+    height: 372px;
     border: 2px solid var(--theme-color);
     background-color: black;
     margin: 10px;
-    bottom: 192px;
+    top: 201px;
     left: 0px;
 }

@@ -9,10 +9,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./style/HD.css" />
     <link rel="stylesheet" href="./style/animate.css" >
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
-    <script src="./lib/jquery-3.3.1.min.js"></script>
-	<script src="./lib/riot+compiler.min.js"></script>
-    <script src="./lib/route.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/riot/riot+compiler.min.js"></script>
+	<!-- Components import-->
+	<link rel="import" href="lib/import.html">
     
+    <script src="./tag/title-text.tag" type="riot/tag"></script>
     <script src="./tag/time-text.tag" type="riot/tag"></script>
 	<script src="./tag/run-info.tag" type="riot/tag"></script>
 	<script src="./tag/player-info.tag" type="riot/tag"></script>
@@ -23,14 +25,12 @@
 <body>
     <div id="wrapper">
         <time-text></time-text>
+        <title-text></title-text>
         <run-info></run-info>
         <timekeeper></timekeeper>
         <player-info></player-info>
         <video-view></video-view>
         <div id="camera"></div>
     </div>
-    <script>
-        riot.mount('time-text');
-    </script>
 </body>
 </html>

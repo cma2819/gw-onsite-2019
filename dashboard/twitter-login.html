@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Components import-->
+	<link rel="import" href="./components/import.html">
+	<!-- Styles import -->
+	<link rel="stylesheet" href="./components/styles/common.css">
+    <script src="twitter-login.js"></script>
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        paper-button {
+            background-color: white;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Twitterにログイン</div>
+    <div id="twitter-name"></div>
+    <paper-button raised onclick="login()">ログイン</paper-button>
+    <a href="https://twitter.com/logout" target="_blank">Twitterをログアウト</a>
+</body>
+</html>

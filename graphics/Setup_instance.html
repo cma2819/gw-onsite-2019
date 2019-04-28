@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RTAStation | Setup Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/Setup_instance.css" />
+    <link rel="stylesheet" href="./style/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/riot/riot+compiler.min.js"></script>
+    <!-- Components import-->
+    <link rel="import" href="lib/import.html">
+
+    <script src="./tag/title-text.tag" type="riot/tag"></script>
+    <script src="./tag/time-text.tag" type="riot/tag"></script>
+    <script src="./tag/run-info.tag" type="riot/tag"></script>
+    <script src="./tag/player-info.tag" type="riot/tag"></script>
+    <script src="./tag/timekeeper.tag" type="riot/tag"></script>
+    <script src="./tag/setup.tag" type="riot/tag"></script>
+
+    <script src="./single.js"></script>
+</head>
+
+<body>
+    <div id="upnext">
+        <div class="title">今後の予定</div>
+        <div id="content">
+            <setup></setup>
+        </div>
+    </div>
+</body>
+
+</html>

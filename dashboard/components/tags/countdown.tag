@@ -15,7 +15,7 @@
 
     </style>
     <div id="label">Countdown</div>
-    <paper-input-container id="countdownContainer" no-label-float auto-validate attr-for-value="value">
+    <paper-input-container id="countdownContainer" no-label-float attr-for-value="value">
         <time-input
             id="timeInput"
             slot="input"
@@ -35,25 +35,40 @@
     </paper-button>
 
     <script>
-        this.observer = opts.observer;
         this.time = opts.time;
         this.running = opts.running;
 
         start(e) {
             this.running = true;
-            this.observer.trigger('countdown', true);
+            const time = this.time;
+            time.formatted = time.minutes + ':' + time.seconds;
+            this.trigger('countdown-start', time);
         }
 
         stop(e) {
             this.running = false;
-            this.observer.trigger('countdown', false);
+            this.trigger('countdown-stop');
         }
 
-        this.observer.on('update-countdown', time => {
-            this.time.minutes = time.minutes || 0;
-            this.time.seconds = time.seconds || 0;
+        this.on('update-time', time => {
+            this.time = time;
+            this.tags['time-input'].trigger('update-time', time);
             this.update();
         });
+
+        this.on('update-running', running => {
+            this.running = running;
+            this.update();
+        })
+
+        this.on('mount', () => {
+            this.tags['time-input'].on('change-minutes', minutes => {
+                this.time.minutes = parseInt(minutes);
+            });
+            this.tags['time-input'].on('change-seconds', seconds => {
+                this.time.seconds = parseInt(seconds);
+            });
+        })
 
     </script>
 </countdown>
@@ -82,18 +97,38 @@
         }
     </style>
     <div id="container" class="layout horizontal">
-        <iron-input class="layout flex" bind-value="{time.minutes}">
-            <input maxlength="2" size="2" aria-label="Minutes">
+        <iron-input class="layout flex" bind-value="{minutes}">
+            <input maxlength="2" size="2" aria-label="Minutes" onchange="{changeMinutes}">
         </iron-input>
 
         <span>:</span>
 
-        <iron-input class="layout flex" bind-value="{time.seconds}">
-            <input maxlength="2" size="2" aria-label="Seconds">
+        <iron-input class="layout flex" bind-value="{seconds}">
+            <input maxlength="2" size="2" aria-label="Seconds" onchange="{changeSeconds}">
         </iron-input>
     </div>
 
     <script>
         this.time = opts.time;
+        this.minutes = ('00' + this.time.minutes).slice(-2);
+        this.seconds = ('00' + this.time.seconds).slice(-2);
+
+        changeMinutes(e) {
+            const minutes = ('00' + e.currentTarget.value).slice(-2);
+            this.minutes = minutes;
+            this.trigger('change-minutes', minutes);
+        }
+
+        changeSeconds(e) {
+            const seconds = ('00' + e.currentTarget.value).slice(-2);
+            this.seconds = seconds;
+            this.trigger('change-seconds', seconds);
+        }
+
+        this.on('update-time', time => {
+            this.time = time;
+            this.minutes = ('00' + time.minutes).slice(-2);
+            this.seconds = ('00' + time.seconds).slice(-2);
+        });
     </script>
 </time-input>

@@ -2,8 +2,8 @@
 <player-info>
     <table id="player-table">
         <tr each="{info in infos}">
-            <th if={info.label}>
-                {info.label}
+            <th class="label" if={info.role}>
+                {info.role}
             </th>
             <td class="name">{info.name}</td>
             <td class="sns">
@@ -12,6 +12,8 @@
                     {info.twitch}</span>
                 <span class="sns_content{preClass} twitter{preClass}" if={info.twitter}><img src="./img/icon_twitter.png" height="24px"
                         width="24px" /> {info.twitter}</span>
+                <span class="sns_content{preClass} nico{preClass}" if={info.nico}><img src="./img/icon_nico.png" height="24px"
+                        width="24px" /> {info.nico}</span>
             </td>
         </tr>
     </table>
@@ -43,6 +45,7 @@
         }
 
         th {
+            width: 20%;
             padding-left: 1em;
             border-bottom: 2px var(--theme-color) solid;
             text-align: left;

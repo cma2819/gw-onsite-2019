@@ -13,8 +13,8 @@
 		},
 		"role": {
 			"type":"string",
-			"enum": ["runner", "commentator"],
-			"default": "runner"
+			"enum": ["Runner", "Commentator",""],
+			"default": "Runner"
 		},
 		"twitter": {
 			"type": "string",

@@ -7,7 +7,7 @@
         </tr>
         <tr id="run-sub">
             <!--            <td id="sub-left"><span>{category[0]}</span><span if={category[1]}>{category[1]}</span></td>-->
-            <td id="sub-right">{run.platform}</td>
+            <td id="sub-right">{run.category} - {run.console}</td>
         </tr>
     </table>
 

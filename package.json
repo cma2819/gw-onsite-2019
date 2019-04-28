@@ -27,6 +27,22 @@
         "file": "stream.html",
         "fullbleed": true,
         "headerColor": "#bdbdff"
+      },
+      {
+        "name": "twitter-login",
+        "title": "Twitter Login",
+        "file": "twitter-login.html",
+        "headerColor": "#bdbdff",
+        "width": 2,
+        "workspace": "media"
+      },
+      {
+        "name": "twitter-submit",
+        "title": "Tweet",
+        "file": "twitter-submit.html",
+        "headerColor": "#bdbdff",
+        "width": 4,
+        "workspace": "media"
       }
     ],
     "graphics": [
@@ -54,18 +70,43 @@
         "file": "Free.html",
         "width": 1280,
         "height": 720
+      },
+      {
+        "file": "Setup.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "Countdown.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "Setup_instance.html",
+        "width": 480,
+        "height": 640
       }
     ]
   },
   "repository": "https://github.com/nodecg/nodecg.git",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
+    "crypto": "^1.0.1",
+    "jquery": "^3.4.0",
     "livesplit-core": "^0.10.2",
     "milliseconds": "^1.0.3",
+    "node-oauth": "^0.1.3",
+    "oauth": "^0.9.15",
+    "oauth-1.0a": "^2.2.5",
     "parse-ms": "^2.0.0",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4",
     "puppeteer": "^1.12.2",
+    "query-string": "^6.4.2",
     "request": "^2.88.0",
-    "riot": "^3.13.2"
+    "riot": "^3.13.2",
+    "twitter": "^1.7.1"
   }
 }

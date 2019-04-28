@@ -1,0 +1,59 @@
+
+#title {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    padding: 0.5em 1em;
+    background-color: var(--background-black);
+}
+
+
+#camera {
+    position: absolute;
+    width: 384px;
+    height: 216px;
+    border: 2px solid var(--theme-color);
+    background-color: black;
+    margin: 10px;
+    bottom: 72px;
+    right: 0px;
+}
+
+#upnext {
+    position: absolute;
+    padding: 10px;
+    top: 72px;
+    width: 824px;
+    height: 360px;
+}
+
+#upnext .title {
+    font-size: 36px;
+    padding: 0 1em;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid var(--theme-color);
+    background: linear-gradient(270deg, transparent, var(--background-white) 20%, var(--background-white));
+}
+
+setup .detail {
+    font-size: 36px;
+}
+
+setup .other {
+    display: none;
+}
+
+setup .misc {
+    max-height: 14em;
+}
+
+#bottom-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    padding: 0.5em 1em;
+    background-color: var(--background-black);
+}

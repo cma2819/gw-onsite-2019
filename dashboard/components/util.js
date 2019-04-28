@@ -15,7 +15,7 @@ function assignSchedulePlayers(repPlayers, schePlayers) {
             });
         } else {
             players[key] = Object.assign({}, players[key], repPlayers[key], {
-                name: '', role: 'runner', twitter: '', twitch: '', time: '', state: 'running'
+                name: '', role: 'Runner', twitter: '', twitch: '', nico: '', time: '', state: 'running'
             });
         }
     }

@@ -10,7 +10,6 @@ const nextRun = nodecg.Replicant('next-run');
 
 // 初期表示
 nodecg.readReplicant('current-run', currentRunValue => {
-    let _currentRun = {};
     // インデックスが初期値(-1)の場合
     if (currentRunValue.idx == -1) {
         // スケジュール設定値で初期化
@@ -48,6 +47,7 @@ nodecg.readReplicant('current-run', currentRunValue => {
             const _nextPlayers = assignSchedulePlayers(nextRunValue.players, nextSchedulePlayers);
 
             _nextRun.players = _nextPlayers;
+            console.log(_nextRun);
             nextRun.value = _nextRun;
         } else {
             _nextRun = nextRunValue;
@@ -189,5 +189,3 @@ currentRun.on('change', newCurrentRun => {
 nextRun.on('change', newNextRun => {
     nodeCgObserver.trigger('update-next-run', newNextRun);
 })
-
-

@@ -4,7 +4,7 @@
             <td class="time {state}"><span>{time}</span></td>
         </tr>
         <tr>
-            <td class="category">{category}</td>
+            <td class="estimate">{estimate}</td>
         </tr>
     </table>
     <style>
@@ -29,41 +29,42 @@
 
         .time {
             font-weight: bold;
-            font-size: 10vh;
+            font-size: 8vh;
             border-bottom: 2px var(--theme-color) solid;
             text-align: left;
         }
 
-        .category {
+        .estimate {
+            color: #444444;
             text-align: right;
         }
 
         .not_started {
-            color: #aaaaaa;
+            color: #666666;
         }
 
         .running {
-            color: #ffffff;
+            color: #000000;
         }
 
         .paused,
         .finised {
-            color: #ffff22;
+            color: #22dd22;
         }
     </style>
 
     <script>
         this.time = opts.time;
         this.state = opts.state;
-        this.category = opts.category;
+        this.estimate = opts.estimate;
 
         // 形式はhh:MM:SS
         observer.on('time-changed', data => {
             this.update({ time: data.time, state: data.state });
         })
 
-        observer.on('update-category', category => {
-            this.update({category: category});
+        observer.on('update-run-info', run => {
+            this.update({estimate: run.estimate});
         })
 
     </script>

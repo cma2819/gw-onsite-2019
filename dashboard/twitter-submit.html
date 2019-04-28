@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Submit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="../bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+	<script src="../node_modules/riot/riot+compiler.min.js"></script>
+	<!-- Components import-->
+	<link rel="import" href="./components/import.html">
+	<!-- Styles import -->
+	<link rel="stylesheet" href="./components/styles/common.css">
+	<!-- Riot components -->
+	<script src="./components/tags/twitter.tag" type="riot/tag"></script>
+	<!-- Riot Tags -->
+	<script src="./tags/gw-twitter.tag" type="riot/tag"></script>
+    <script src="twitter-submit.js" defer></script>
+</head>
+<style>
+    body {
+        background-color: white
+    }
+</style>
+<body>
+    <gw-twitter></gw-twitter>
+</body>
+</html>

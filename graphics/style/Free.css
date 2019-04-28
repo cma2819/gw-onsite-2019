@@ -1,0 +1,86 @@
+
+title-text {
+    height: 3em;
+    width: 312px;
+}
+
+video-view {
+    position: absolute;
+    width: 896px;
+    height: 504px;
+    border: 2px solid var(--theme-color);
+    background-color: black;
+    margin: 10px 10px 0px 0px;
+    top: 0px;
+    right: 0px;
+}
+
+run-info {
+    position: absolute;
+    top: 516px;
+    right: 362px;
+    width: 544px;
+    margin: 10px 10px;
+    background: linear-gradient(90deg, transparent, var(--background-white) 20%, var(--background-white) 80%, transparent);
+}
+
+player-info {
+    position: absolute;
+    bottom: 0px;
+    right: 362px;
+    width: 544px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    background: linear-gradient(90deg, transparent, var(--background-white) 20%, var(--background-white));
+}
+
+player-info .label {
+    display: none;
+}
+
+timekeeper {
+    position: absolute;
+    width: 352px;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    padding-left: 0px;
+    background: linear-gradient(270deg, transparent, var(--background-white) 20%, var(--background-white));
+}
+
+#camera {
+    position: absolute;
+    width: 352px;
+    height: 186px;
+    border: 2px solid var(--theme-color);
+    background-color: black;
+    margin: 10px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#upnext {
+    position: absolute;
+    padding: 10px;
+    top: 174px;
+    width: 342px;
+    height: 360px;
+}
+
+#upnext .title {
+    padding: 0 1em;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid var(--theme-color);
+}
+
+setup .detail {
+    font-size: 24px;
+}
+
+setup .other {
+    display: none;
+}
+
+setup .misc {
+    max-height: 14em;
+}

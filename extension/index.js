@@ -13,6 +13,8 @@ module.exports = nodecg => {
 };
 
 async function init() {
+    require('./countdown');
     require('./timekeeping');
     require('./bingolist');
+    require('./twitter');
 }

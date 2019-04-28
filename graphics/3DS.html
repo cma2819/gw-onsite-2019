@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RTAStation | 4:3 Race </title>
+    <title>RTAStation | 4:3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./style/common.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/4-3_race.css" />
-    <link rel="stylesheet" href="./style/animate.css" >
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/3DS.css" />
+    <link rel="stylesheet" href="./style/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
-    <script src="./lib/jquery-3.3.1.min.js"></script>
-	<script src="./lib/riot+compiler.min.js"></script>
-    <script src="./lib/route.min.js"></script>
-    
-	<script src="./tag/run-info.tag" type="riot/tag"></script>
-	<script src="./tag/player-info.tag" type="riot/tag"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../node_modules/riot/riot+compiler.min.js"></script>
+
+    <script src="./tag/title-text.tag" type="riot/tag"></script>
+    <script src="./tag/time-text.tag" type="riot/tag"></script>
+    <script src="./tag/run-info.tag" type="riot/tag"></script>
+    <script src="./tag/player-info.tag" type="riot/tag"></script>
     <script src="./tag/timekeeper.tag" type="riot/tag"></script>
-    
-    <script src="./race.js"></script>
+
+    <script src="./single.js"></script>
 </head>
+
 <body>
-    <img src="img/logo.gif" id="logo" />
-    <video-view id="v-player1"></video-view>
-    <video-view id="v-player2"></video-view>
-    <player-info id="p-player1"></player-info>
-    <player-info id="p-player2"></player-info>
-    <run-info></run-info>
-    <timekeeper></timekeeper>
-    <div id="camera"></div>
+    <div id="wrapper">
+        <time-text></time-text>
+        <title-text></title-text>
+        <run-info></run-info>
+        <timekeeper></timekeeper>
+        <player-info></player-info>
+        <video-view id="top"></video-view>
+        <video-view id="bottom"></video-view>
+        <div id="camera"></div>
+    </div>
 </body>
+
 </html>

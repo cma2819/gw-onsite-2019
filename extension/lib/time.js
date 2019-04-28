@@ -1,9 +1,10 @@
 'use strict';
 /*
 Object.defineProperty(exports, "__esModule", { value: true });
+*/
 // Native
 const events_1 = require("events");
-*/
+
 // Packages
 const parseMsToObj = require("parse-ms");
 const convertUnitToMs = require("milliseconds");
@@ -92,7 +93,6 @@ module.exports.parseTimeString = parseTimeString;
 /**
  * A timer which counts down to a specified end time.
  */
-/*
 class CountdownTimer extends events_1.EventEmitter {
     constructor(endTime, { tickRate = 100 } = {}) {
         super();
@@ -110,7 +110,7 @@ class CountdownTimer extends events_1.EventEmitter {
     }
 }
 module.exports.CountdownTimer = CountdownTimer;
-*/
+
 /**
  * A timer which counts up, with no specified end time.
  */

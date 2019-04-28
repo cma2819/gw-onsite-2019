@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+        "screen_name": {
+            "type": "string",
+            "default": ""
+        },
+        "access_token": {
+            "type": "string",
+            "default": ""
+        },
+		"access_secret": {
+            "type": "string",
+            "default": ""
+		}
+	}
+}

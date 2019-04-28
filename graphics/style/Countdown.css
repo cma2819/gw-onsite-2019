@@ -1,0 +1,20 @@
+#countdown {
+    margin: 10px;
+    position: absolute;
+    top: 144px;
+    right: 0px;
+    width: 384px;
+    font-size: 32px;
+}
+
+#countdown .title {
+    padding: 0 1em;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid var(--theme-color);
+    background: linear-gradient(270deg, transparent, var(--background-white) 20%, var(--background-white));
+}
+
+#countdown countdown {
+    width: 6em;
+    margin: 0 auto;
+}
