@@ -11,9 +11,6 @@ const nodecg = nodecgApiContext.get();
 // Replicant
 const twitterAccess = nodecg.Replicant('twitter-token');
 
-/*
-    For test
-*/
 const consumerKey = nodecg.bundleConfig.twitter.consumer_key;
 const consumerSecret = nodecg.bundleConfig.twitter.consumer_secret;
 
@@ -181,13 +178,3 @@ nodecg.listenFor('twitter:submitTweet', async (tweetContent, cb) => {
         cb(false);
     }
 })
-
-/*
-client.post('oauth/request_token', {oauth_callback: 'https://twitter.com/cma2819'})
-    .then(response => {
-        console.log(response);
-    })
-    .catch(error => {
-        console.error(error);
-    });
-*/

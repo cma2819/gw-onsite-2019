@@ -9,7 +9,6 @@
 
         #countdownContainer {
             padding-top: 0;
-/*            margin-top: -6px;*/
             width: 100px;
         }
 

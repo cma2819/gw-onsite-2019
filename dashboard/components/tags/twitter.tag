@@ -57,7 +57,6 @@
 
         bindText(e) {
             const before = this.refs['tweet-text'].value || '';
-            //this.refs['tweet-text'].value = before + this.bindText;
             this.refs['tweet-text'].value = before + this.bindTemp;
         }
 

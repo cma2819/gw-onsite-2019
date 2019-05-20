@@ -120,18 +120,10 @@
 
             editCurrent(e) {
                 this.trigger('edit-current', this.currentRun);
-                /*
-                this.refs['editor'].trigger('set-run-info', 'Current Run(#' + this.currentRun.idx + ')', this.currentRun);
-                this.refs['edit-dialog'].open();
-                */
             }
 
             editNext(e) {
                 this.trigger('edit-next', this.nextRun);
-                /*
-                this.refs['editor'].trigger('set-run-info', 'Next Run(#' + this.nextRun.idx + ')', this.nextRun);
-                this.refs['edit-dialog'].open();
-                */
             }
 
             this.on('update-current', current => {

@@ -62,7 +62,6 @@
                     this.checklist[i][j] = false;
                 }
             }
-            console.log(this.checklist);
             this.update();
         })
         changeCheck(e) {

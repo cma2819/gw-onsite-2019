@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "schedule": {
+            "type": "object",
+            "properties": {
+                "game": {
+                    "type": "string"
+                },
+                "console": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "scheduled_at": {
+                    "type": "number"
+                },
+                "players": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "role": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "twitch": {
+                                "type": "string"
+                            },
+                            "twitter": {
+                                "type": "string"
+                            },
+                            "nico": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "twitter": {
+            "type": "object",
+            "properties": {
+                "consumer_key": {
+                    "type": "string"
+                },
+                "consumer_secret": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
